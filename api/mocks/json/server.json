@@ -1,0 +1,80 @@
+{
+  "servers": {
+    "server": [
+      {
+        "core_number": "1",
+        "created": 1649091383,
+        "host": 6612599427,
+        "hostname": "website",
+        "license": 0,
+        "memory_amount": "1024",
+        "plan": "1xCPU-1GB",
+        "plan_ipv4_bytes": "4633",
+        "plan_ipv6_bytes": "0",
+        "simple_backup": "no",
+        "state": "started",
+        "tags": {
+          "tag": []
+        },
+        "title": "website",
+        "uuid": "00282a0a-a346-464f-930f-9514dff8111c",
+        "zone": "nl-ams1"
+      },
+      {
+        "core_number": "2",
+        "created": 1649091592,
+        "host": 7417905795,
+        "hostname": "mysql-server",
+        "license": 0,
+        "memory_amount": "4096",
+        "plan": "2xCPU-4GB",
+        "plan_ipv4_bytes": "3108",
+        "plan_ipv6_bytes": "0",
+        "simple_backup": "no",
+        "state": "started",
+        "tags": {
+          "tag": []
+        },
+        "title": "mysql-server",
+        "uuid": "009059ac-9c05-481c-acbc-ce2d4ed6c74e",
+        "zone": "nl-ams1"
+      },
+      {
+        "core_number": "1",
+        "created": 1649091565,
+        "hostname": "website-old",
+        "license": 0,
+        "memory_amount": "1024",
+        "plan": "1xCPU-1GB",
+        "plan_ipv4_bytes": "0",
+        "plan_ipv6_bytes": "0",
+        "simple_backup": "no",
+        "state": "stopped",
+        "tags": {
+          "tag": []
+        },
+        "title": "website-old",
+        "uuid": "00987dac-2278-4856-bbdf-6d9716a8f26d",
+        "zone": "nl-ams1"
+      },
+      {
+        "core_number": "2",
+        "created": 1649091691,
+        "hostname": "resize-server",
+        "license": 0,
+        "memory_amount": "4096",
+        "plan": "2xCPU-4GB",
+        "plan_ipv4_bytes": "0",
+        "plan_ipv6_bytes": "0",
+        "simple_backup": "no",
+        "state": "maintenance",
+        "tags": {
+          "tag": []
+        },
+        "title": "server that is getting resized",
+        "uuid": "00f3d45f-6889-4bbc-a60a-32cf67073d55",
+        "zone": "nl-ams1"
+      }
+    ]
+  }
+}
