@@ -81,10 +81,60 @@ const cardSectionStyles = css`
   }
 `;
 
+const serverEntry = css`
+@import 'color';
+@import 'rem';
+
+.Server__Title {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: rem(20px);
+}
+
+.Server__SingleEntry {
+  display: flex;
+  flex-direction: column;
+}
+
+.Server__Entry {
+  display: flex;
+  align-items: center;
+}
+
+.Server__Hostname {
+  display: block;
+  margin-left: rem(20px);
+}
+
+.status-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.Server__Icon__Active {
+  @extend .status-icon;
+  background-color: color(ui, green);
+}
+
+.Server__Icon__Stopped {
+  @extend .status-icon;
+  background-color: color(ui, red);
+}
+
+.Server__Icon__Any {
+  @extend .status-icon;
+  background-color: color(ui, yellow);
+}
+
+`;
+
 export {
   cardContentStyles,
   cardHeadStyles,
   cardSectionStyles,
   cardStyles,
   commonCardStyles,
+  serverEntry,
 };

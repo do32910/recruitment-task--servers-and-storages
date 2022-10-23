@@ -5,6 +5,7 @@ import css from 'styled-jsx/css';
 
 import globalStyles from './globalStyles';
 import styles from './styles';
+import Link from 'next/link';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -32,8 +33,12 @@ export const Layout = ({ children }: LayoutProps) => (
           alt="UpCloud logo"
         />
         <nav className="app-nav">
-          <a href="#">Servers</a>
-          <a href="#">Storages</a>
+          <Link href="/servers">
+            <a>Servers</a>
+          </Link>
+          <Link href="/storages">
+            <a>Storages</a>
+          </Link>
         </nav>
       </Wrapper>
     </header>
