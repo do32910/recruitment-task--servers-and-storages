@@ -16,7 +16,8 @@ const searchBarStyles = css`
     font-size: rem(16px);
     opacity: 0.8;
 
-    &:focus, focus-visible {
+    &:focus,
+    focus-visible {
       border-top: 0;
       border-left: 0;
       border-right: 0;
@@ -28,6 +29,4 @@ const searchBarStyles = css`
   }
 `;
 
-export {
-  searchBarStyles,
-}
+export { searchBarStyles };

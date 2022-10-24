@@ -1,24 +1,24 @@
-import { useEffect, useState } from "react";
-import { searchBarStyles } from "./styles"
+import { useEffect, useState } from 'react';
+import { searchBarStyles } from './styles';
 
 export function SearchBar({ search }): JSX.Element {
-  const [ searchTerm, setSearchTerm ] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-      setTimeout(() => search(searchTerm), 500);
+    setTimeout(() => search(searchTerm), 500);
   }, [searchTerm]);
 
   const handleInputChange = (e: React.FormEvent<HTMLInputElement>) => {
-    setSearchTerm(e.currentTarget.value)
-  }
+    setSearchTerm(e.currentTarget.value);
+  };
 
   return (
     <>
       <style jsx>{searchBarStyles}</style>
-      <input 
+      <input
         className="SearchBar"
         placeholder="Search by name and hostname"
-        type="text"  
+        type="text"
         autoFocus
         value={searchTerm}
         onChange={handleInputChange}
