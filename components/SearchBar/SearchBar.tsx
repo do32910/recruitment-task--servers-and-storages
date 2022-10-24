@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
 import { searchBarStyles } from "./styles"
 
-export function SearchBar({search}) {
+export function SearchBar({ search }): JSX.Element {
   const [ searchTerm, setSearchTerm ] = useState('');
 
   useEffect(() => {
-    // Simple debounce solution
-    setTimeout(() => search(searchTerm), 500);
+      setTimeout(() => search(searchTerm), 500);
   }, [searchTerm]);
 
-  const handleInputChange = (evt) => {
-    setSearchTerm(evt.target.value)
+  const handleInputChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setSearchTerm(e.currentTarget.value)
   }
 
   return (
