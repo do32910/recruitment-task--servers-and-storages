@@ -7,7 +7,7 @@ import { SearchBar } from 'components/SearchBar/SearchBar';
 import Wrapper from 'components/Wrapper';
 import { Loader } from 'components/Loader';
 
-const serverEntry = css`
+const serverStyles = css`
   @import 'color';
   @import 'rem';
 
@@ -122,7 +122,7 @@ const Servers = () => {
           server.displayed && (
             <Card.Section key={server.uuid}>
               <Wrapper>
-                <style jsx>{serverEntry}</style>
+                <style jsx>{serverStyles}</style>
                 <div className="Server__Container">
                   <i className={getClassName(server.state)}></i>
                   <div className="Server__ContentWrapper">
