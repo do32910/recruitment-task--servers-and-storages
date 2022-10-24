@@ -59,7 +59,7 @@ interface IServerListItem extends IServer {
   displayed: boolean;
 }
 
-const Storages = () => {
+const Servers = () => {
   const [servers, setServers] = useState<IServerListItem[]>([]);
 
   const hasAnyResults = !!servers.find((server) => server.displayed);
@@ -152,4 +152,4 @@ const Storages = () => {
   );
 };
 
-export default Storages;
+export default Servers;

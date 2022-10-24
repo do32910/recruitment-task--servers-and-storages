@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Welcome from 'components/Welcome';
+import Servers from './servers';
 
 const Home = () => (
   <>
@@ -8,8 +8,7 @@ const Home = () => (
       <title>UpCloud</title>
     </Head>
     <main>
-      {/* TODO: render servers etc. ? */}
-      <Welcome />
+      <Servers />
     </main>
   </>
 );
